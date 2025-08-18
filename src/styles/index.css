@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Hide scrollbars on TV / kiosk if needed */
+body::-webkit-scrollbar { width: 0.5rem; }
