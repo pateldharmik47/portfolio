@@ -4,6 +4,9 @@ on:
   push:
     branches: ["main"]
 
+permissions:
+  contents: write   # 🔑 Required so action can push to gh-pages branch
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -32,3 +35,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages   # 🔑 ensures deploy branch is correct
