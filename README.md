@@ -20,8 +20,3 @@ Then set the same in your deployment provider (Vercel/Netlify) as environment va
 npm run build
 npm run preview
 ```
-
-## Notes
-- System theme is respected, with a manual toggle in the header.
-- All content is mapped from `src/constants/data.js` so you can edit skills, projects, links, etc.
-- Fully responsive using Tailwind’s utility classes.
